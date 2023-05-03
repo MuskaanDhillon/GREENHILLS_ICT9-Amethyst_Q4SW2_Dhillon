@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+	<style>
+		table{
+			border-style:double;
+			border-width:4px;
+			border-color:hotpink;
+		}
+	</style>
+</head>
+<body bgcolor="E76161"> <center>
+<hr>
+<hr>
+<br>
+<table bgcolor="F99B7D">
+<tr>
+<td width="500" height="500"><center>
+	<h3>MINUTES CONVERTER</h3>
+
+	<input type="text" Id="id1" placeholder="Input Value"><br>
+	<input type="submit" value="Minutes to Seconds" onclick="Blorb()">
+	<input type="submit" value="Minutes to Hours" onclick="blorbo()">
+	<input type="submit" value="Minutes to Days" onclick="Blor()">
+	<p id="answer"></p>
+	<script>
+		function Blorb() {
+			var num1 = document.getElementById('id1').value;
+			var answer = num1 * Number(60);
+			document.getElementById('answer').innerHTML = answer + " Seconds";
+		}
+	</script>
+
+	<script>
+		function blorbo() {
+			var num1 = document.getElementById('id1').value;
+			var answer = num1 / Number(60);
+			document.getElementById('answer').innerHTML =  answer + " Hours";
+		}
+	</script>
+
+	<script>
+		function Blor() {
+			var num1 = document.getElementById('id1').value;
+			var answer = num1 / Number(1440);
+			document.getElementById('answer').innerHTML = answer + " Days";
+		}
+	</script>
+</td>
+</tr>
+</table>
+
+<br><br><br><br>
+
+<hr>
+<hr>
+</body> </center>
+</html>
